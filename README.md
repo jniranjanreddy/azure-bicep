@@ -78,3 +78,7 @@ root@dev-server01:/jnr/azure-bicep/basics# az deployment group create -g 'playgr
 }
 root@dev-server01:/jnr/azure-bicep/basics#
 ```
+## how to use parameters
+```
+az deployment group create -g 'deploy-group' -f 'Path to hello.bicep' -p 'path of parameter file.'
+```
