@@ -1,5 +1,11 @@
 # azure-bicep
-## VSCode Extentions.
+## bicep Linting
+```
+root@dev-server01:/jnr/azure-bicep/basics# /root/.azure/bin/bicep build main.bicep
+/jnr/azure-bicep/basics/main.bicep(4,29) : Error BCP236: Expected a new line or comma character at this location.
+/jnr/azure-bicep/basics/main.bicep(4,31) : Error BCP018: Expected the ":" character at this location.
+
+```
 
 ```
 root@dev-server01:~# az bicep version
@@ -34,7 +40,7 @@ root@dev-server01:/jnr/azure-bicep/basics# az deployment group create -g 'playgr
     "onErrorDeployment": null,
     "outputResources": [
       {
-        "id": "/subscriptions/12345/resourceGroups/1-5ea956cd-playground-sandbox/providers/Microsoft.Storage/storageAccounts/storagenirulabs",
+        "id": "/subscriptions/12345/resourceGroups/playground-sandbox/providers/Microsoft.Storage/storageAccounts/storagenirulabs",
         "resourceGroup": "playground-sandbox"
       }
     ],
@@ -81,4 +87,8 @@ root@dev-server01:/jnr/azure-bicep/basics#
 ## how to use parameters
 ```
 az deployment group create -g 'deploy-group' -f 'Path to hello.bicep' -p 'path of parameter file.'
+```
+## what-if for Dry run
+```
+az deployment group what-if --resource-group whatIfRg  --name 'Resource-group' --template-file
 ```
