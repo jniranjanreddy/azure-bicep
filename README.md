@@ -92,3 +92,7 @@ az deployment group create -g 'deploy-group' -f 'Path to hello.bicep' -p 'path o
 ```
 az deployment group what-if --resource-group whatIfRg  --name 'Resource-group' --template-file
 ```
+## Data Types
+```
+
+```
