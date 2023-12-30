@@ -1,16 +1,16 @@
 // param location string = resourceGroup().location
-param storageName string
 param location string = 'eastus'
+param SAname string = 'storageaccountrx'
 
 resource storageaccount 'Microsoft.Storage/storageAccounts@2021-02-01' = {
-  name: storageName
+  name: SAname
   location: location
   kind: 'StorageV2'
   sku: {
     name: 'Premium_LRS'
   }
   properties: {
-    accessTier: 'Hot'
+    supportsHttpsTrafficOnly: true
   }
 }
 
@@ -21,3 +21,16 @@ var nameArray = [
   3
 
 ]
+
+var person = {
+  name: 'james'
+  lastName: 'ray'
+  age: 30
+  isMarried: false
+  address: {
+    street: '123 main st'
+    city: 'seattle'
+  }
+}
+
+output result string = person.address.city
