@@ -1,0 +1,14 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "githubtoken": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/bcc5f874-b014-494c-8d36-00c478cfc844/resourceGroups/rx-bicep-rg/providers/Microsoft.KeyVault/vaults/githubTokenBicep"
+                },
+                "secretName": "githubAuthToken"
+            }
+        }
+    }
+}

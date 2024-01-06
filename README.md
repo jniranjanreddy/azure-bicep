@@ -91,8 +91,24 @@ az deployment group create -g 'deploy-group' -f 'Path to hello.bicep' -p 'path o
 ## what-if for Dry run
 ```
 az deployment group what-if --resource-group whatIfRg  --name 'Resource-group' --template-file
+New-AzResourceGroupDeployment -ResourceGroupName DevOps-IAC-rg -TemplateFile webapp.bicep
 ```
 ## Data Types
 ```
+arrays, bool, int, object, string
+
+```
+## Decorators
+```
+allowed
+secure
+minLength & maxLength
+minValue & maxValue
+description
+metadata
+```
+## What-if
+```
+az deployment group create -g DevOps-IAC-rg -f webapp.bicep --confirm-with-what-if
 
 ```
