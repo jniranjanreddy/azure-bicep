@@ -1,5 +1,10 @@
 # azure-bicep
 ## bicep Linting
+
+## How to install powershell AZ module for.
+## Install-Module -Name Az -Repository PSGallery -Force
+
+
 ```
 root@dev-server01:/jnr/azure-bicep/basics# /root/.azure/bin/bicep build main.bicep
 /jnr/azure-bicep/basics/main.bicep(4,29) : Error BCP236: Expected a new line or comma character at this location.
