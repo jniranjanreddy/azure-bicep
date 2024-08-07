@@ -2,8 +2,26 @@
 ## bicep Linting
 
 ## How to install powershell AZ module for.
-## Install-Module -Name Az -Repository PSGallery -Force
+```
+Install-Module -Name Az -Repository PSGallery -Force
 
+In powershell command, execute below command to login to portal
+ 
+PS /mnt/c/Users/NJannapureddy> Connect-AzAccount -UseDeviceAuthentication
+WARNING: You may need to login again after updating "EnableLoginByWam".
+Please select the account you want to login with.
+
+[Login to Azure] To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code BL2XXXXX to authenticate.
+Retrieving subscriptions for the selection
+
+Open this in the bwowser and provide code, then it aks to choose the subscription.
+```
+
+
+
+
+
+```
 
 ```
 root@dev-server01:/jnr/azure-bicep/basics# /root/.azure/bin/bicep build main.bicep
