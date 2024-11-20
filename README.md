@@ -12,3 +12,4 @@ https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/
 | @default | Parameters	Assigns a default value to a parameter. |
 | @dependsOn | Resources, Modules	Explicitly defines dependencies.|
 
+![image](https://github.com/user-attachments/assets/2aaf0dd6-e77e-42cf-a839-4bd54f413049)
