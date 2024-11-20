@@ -13,3 +13,9 @@ https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/
 | @dependsOn | Resources, Modules	Explicitly defines dependencies.|
 
 ![image](https://github.com/user-attachments/assets/2aaf0dd6-e77e-42cf-a839-4bd54f413049)
+
+
+
+```
+Bicep build hello.bicep // will create a ARM template of that Bicep file.
+```
